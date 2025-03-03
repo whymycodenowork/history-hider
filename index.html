@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe Toggle Example</title>
+    <title>about:blank</title>
     <style>
         /* General Body Styling */
         body {
@@ -82,8 +82,8 @@
 </head>
 <body>
 
-    <h1>Enter a URL and Toggle the Iframe</h1>
-
+    <h1>Enter a URL</h1>
+    <h4>Press "H" to toggle</h4>
     <!-- Wrapper for input and button -->
     <div class="input-container">
         <label for="urlInput" style="font-size: 16px; margin-right: 10px; color: #4A4A4A;">Enter URL:</label>
@@ -124,6 +124,9 @@
                     iframe.style.display = "none";   // Hide iframe
                     document.body.style.backgroundColor = ""; // Reset background color
                 }
+            }
+            if (event.key === "j" || event.key === "J") {
+                window.open("https://www.example.com", "_blank");
             }
         });
     </script>
